@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>GitHub-pages by dragos-bogdan</title>
+    <title>CloudFlare Page Rules + GitHub = ♥️ Granular control by dragos-bogdan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,16 +11,16 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">GitHub-pages</h1>
-      <h2 class="project-tagline">Github Pages</h2>
+      <h1 class="project-name">CloudFlare Page Rules + GitHub = ♥️ Granular control</h1>
+      <h2 class="project-tagline">♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️</h2>
       <a href="https://github.com/dragos-bogdan/github-pages" class="btn">View on GitHub</a>
       <a href="https://github.com/dragos-bogdan/github-pages/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/dragos-bogdan/github-pages/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="github--cloudflare-page-rules--granular-control" class="anchor" href="#github--cloudflare-page-rules--granular-control" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub + CloudFlare Page Rules = Granular control</h3>
+      <h2>
+<a id="github--cloudflare-page-rules--granular-control" class="anchor" href="#github--cloudflare-page-rules--granular-control" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub + CloudFlare Page Rules = Granular control</h2>
 
 <p>Page Rules gives you the ability to control how CloudFlare works on a URL basis allowing you to customize CloudFlare's functionality to exactly match your application's needs.</p>
 
@@ -28,8 +28,43 @@
 
 <p>The number of available Page Rules for a domain is set by plan type; additional rules can be purchased a la carte. Check out our plans page for more information.</p>
 
+<h3>
+<a id="about-page-rules" class="anchor" href="#about-page-rules" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Page Rules</h3>
+
+<p>CloudFlare is provisioned by DNS. That means that, from the beginning, you've been able to turn CloudFlare on or off on a subdomain level. From the CloudFlare DNS Manager, you can toggle the little clouds next to your subdomains orange (on) or gray (off) in order to control whether traffic for that subdomain will pass through CloudFlare's proxy.</p>
+
+<p>Often, however, users have wanted finer-grained control. For example, you may want to have a CloudFlare app like UserVoice added to your public-facing pages, but not appear on your private administrative areas of your website. Before today, that wasn't an option.</p>
+
+<h3>
+<a id="an-introduction" class="anchor" href="#an-introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>An Introduction</h3>
+
+<p>Page Rules is a powerful new set of tools that allows you to control how CloudFlare works on your site on a page-by-page basis. The feature provides many of the most popular controls of HTACCESS with a user-friendly interface. Page Rules are now available for all users from the Settings menu next to each domain on the My Websites page. Over the next few days we'll be posting some tutorials on the CloudFlare Blog on various ways you can use Page Rules, but I wanted to start with the example above: how to turn a CloudFlare app like UserVoice off on the administrative portion of your website.</p>
+
+<h3>
+<a id="pattern-matching" class="anchor" href="#pattern-matching" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pattern Matching</h3>
+
+<p>Page Rules give you the ability to take various actions based on the page's URL, such as creating redirects, fine tuning caching behavior, or enabling and disabling our various services.</p>
+
+<p>A Page Rule will take effect on a given URL pattern, matching the following format:</p>
+
+<p><em>://&lt;:port&gt;/</em></p>
+
+<p>An example using each component would be:</p>
+
+<p><em><a href="https://www.example.com:80/image.png">https://www.example.com:80/image.png</a></em></p>
+
+<p>The scheme and port components are both optional. If the scheme is omitted, it will cover both http:// and https:// protocols. If the port is not specified, then the rule will match all ports. You can perform basic wildcard matches by using a ‘*’ symbol in your rule pattern, allowing it to match a series of similar patterns rather than just one.</p>
+
+<p>There are two important things to note with Page Rules:</p>
+
+<p>Only one Page Rule will take effect on any given request
+Page Rules are given priority in an order from top to bottom
+Once a URL matches a rule, only that rule only will be applied - ie. if a Page Rule has already triggered on a request, any subsequent rules that also match the URL pattern will not take effect. As a general rule, we recommend ordering your rules from most specific to least specific.</p>
+
+<p>Page rules can be paused, in which case they will take no action but can still be seen in the list and edited. The Save as Draft option will create a page rule that is paused initially.</p>
+
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/dragos-bogdan/github-pages">GitHub-pages</a> is maintained by <a href="https://github.com/dragos-bogdan">dragos-bogdan</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/dragos-bogdan/github-pages">CloudFlare Page Rules + GitHub = ♥️ Granular control</a> is maintained by <a href="https://github.com/dragos-bogdan">dragos-bogdan</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
