@@ -1,0 +1,6 @@
+{
+  "name": "GitHub-pages",
+  "tagline": "Github Pages",
+  "body": "### GitHub + CloudFlare Page Rules = Granular control\r\nPage Rules gives you the ability to control how CloudFlare works on a URL basis allowing you to customize CloudFlare's functionality to exactly match your application's needs.\r\n\r\nPage Rules can manage almost every setting on CloudFlare, as well as many of the most popular controls of HTACCESS within a user-friendly interface. You can see the full list of settings now available in Page Rules here.\r\n\r\nThe number of available Page Rules for a domain is set by plan type; additional rules can be purchased a la carte. Check out our plans page for more information.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
